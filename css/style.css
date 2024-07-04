@@ -1,0 +1,110 @@
+#carouselExample .carousel-item img {
+    max-height: calc(33.33vw); 
+    width: 100%;
+    object-fit: cover; 
+}
+
+.carousel-control-prev, .carousel-control-next {
+    top: 50%; /* Alineación vertical al centro */
+    transform: translateY(-50%);
+    bottom: auto; /* Asegura que no se aplique bottom */
+}
+.bg-light-custom {
+    background-color: #f8f9fa9d; /* Cambia este color al gris claro deseado */
+}
+
+.navbar-nav .nav-item {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/*IPHONE_FUNDA*/
+
+.row-mb-4 {
+    margin-bottom: 30px;
+}
+
+.row-mt-30 {
+    margin-top: 30px;
+}
+
+.col-center {
+    text-align: center;
+}
+.custom-card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-color: #f8f9fa; /* Color de fondo */
+    transition: transform 0.3s, box-shadow 0.3s, height 0.3s;
+    position: relative;
+    padding: 10px;
+    border: 2px solid white;
+    margin-right: 15px; /* Margen derecho */
+    margin-left: 15px; /* Margen izquierdo */
+}
+
+.custom-card:hover {
+    transform: scale(1.1);
+}
+
+.custom-card-img {
+    width: 190px;
+    height: 250px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.custom-card-body {
+    padding: 15px;
+}
+
+.custom-card-precio {
+    margin-bottom: 30px; 
+}
+
+.custom-btn-view {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: opacity 0.3s;
+    font-size: 0.9rem;
+}
+
+.custom-card-body:hover .custom-btn-view {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .custom-card {
+        margin-right: 10px; /* Ajusta el margen derecho en dispositivos móviles */
+        margin-left: 10px; /* Ajusta el margen izquierdo en dispositivos móviles */
+    }
+    .custom-card:hover {
+        transform: none; /* Quita el efecto de escala en hover */
+    }
+    
+    .custom-card-body .custom-btn-view {
+        display: block; 
+    }
+}
+
+/*TPU*/
+#productCarousel .carousel-item img {
+    max-height: 450px; 
+    width: auto; 
+    object-fit: contain; 
+}
