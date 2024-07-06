@@ -5,12 +5,12 @@
 }
 
 .carousel-control-prev, .carousel-control-next {
-    top: 50%; /* Alineación vertical al centro */
+    top: 50%; 
     transform: translateY(-50%);
-    bottom: auto; /* Asegura que no se aplique bottom */
+    bottom: auto; 
 }
 .bg-light-custom {
-    background-color: #f8f9fa9d; /* Cambia este color al gris claro deseado */
+    background-color: #f8f9fa9d; 
 }
 
 .navbar-nav .nav-item {
@@ -41,13 +41,13 @@
     border-radius: 4px;
     overflow: hidden;
     margin-bottom: 20px;
-    background-color: #f8f9fa; /* Color de fondo */
+    background-color: #f8f9fa; 
     transition: transform 0.3s, box-shadow 0.3s, height 0.3s;
     position: relative;
     padding: 10px;
     border: 2px solid white;
-    margin-right: 15px; /* Margen derecho */
-    margin-left: 15px; /* Margen izquierdo */
+    margin-right: 15px; 
+    margin-left: 15px; 
 }
 
 .custom-card:hover {
@@ -90,11 +90,11 @@
 
 @media (max-width: 768px) {
     .custom-card {
-        margin-right: 10px; /* Ajusta el margen derecho en dispositivos móviles */
-        margin-left: 10px; /* Ajusta el margen izquierdo en dispositivos móviles */
+        margin-right: 10px; 
+        margin-left: 10px; 
     }
     .custom-card:hover {
-        transform: none; /* Quita el efecto de escala en hover */
+        transform: none; 
     }
     
     .custom-card-body .custom-btn-view {
