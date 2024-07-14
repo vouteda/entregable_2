@@ -3,3 +3,24 @@
 @import 'carousel';
 @import 'navbar';
 @import 'cards';
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.header-content {
+    animation: slideInFromLeft 1s ease-in-out forwards;
+}
+
+// Otras reglas de estilo para tu página
+.otro-elemento {
+    color: #333;
+    font-size: 16px;
+}
