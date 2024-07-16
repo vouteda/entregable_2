@@ -19,25 +19,25 @@
     transition: transform 0.3s, box-shadow 0.3s, height 0.3s;
     position: relative;
     padding: 10px;
-    margin: 0 15px;
     max-width: 220px;
 
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.03); /* Ajustado para que no se agrande demasiado */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agregado un efecto de sombra sutíl */
     }
 
     .custom-card-img {
         width: 100%;
         height: 250px;
-        margin-bottom: 15px;
         object-fit: cover;
+        border-radius: 4px 4px 0 0; /* Ajustado para redondear solo las esquinas superiores */
     }
 
     .custom-card-body {
         padding: 15px;
 
         .custom-card-precio {
-            margin-bottom: 30px;
+            margin-bottom: 10px; /* Reducido el margen inferior */
         }
 
         .custom-btn-view {
@@ -55,7 +55,7 @@
             font-size: 0.9rem;
 
             &:hover {
-                display: block;
+                opacity: 0.7; /* Ajustado para controlar la opacidad en hover */
             }
         }
     }
@@ -63,15 +63,17 @@
 
 @media (max-width: 768px) {
     .custom-card {
-        margin: 0 10px;
+        max-width: 100%; /* Ajustado para ocupar el ancho completo en dispositivos móviles */
+        margin-bottom: 20px;
 
         &:hover {
-            transform: none;
+            transform: none; /* Eliminado el efecto de escala en dispositivos móviles */
+            box-shadow: none; /* Eliminado el efecto de sombra en dispositivos móviles */
         }
 
         .custom-card-body {
             .custom-btn-view {
-                display: block;
+                display: block; /* Ajustado para mostrar el botón de vista en dispositivos móviles */
             }
         }
     }
@@ -133,4 +135,5 @@
         }
     }
 }
+
 
