@@ -76,3 +76,61 @@
         }
     }
 }
+
+/* Estilos para tarjetas horizontales */
+.custom-card-horizontal {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+    .custom-card-img-horizontal {
+        max-width: 150px;
+        width: 100%;
+        margin-right: 20px;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+
+    .custom-card-body-horizontal {
+        flex: 1;
+        text-align: left;
+
+        .custom-card-producto {
+            margin-bottom: 10px;
+        }
+
+        .custom-card-precio {
+            margin-bottom: 10px;
+        }
+
+        .custom-card-subtitulo {
+            margin-bottom: 10px;
+        }
+
+        .custom-btn-view {
+            background-color: black;
+            color: white;
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: opacity 0.3s;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-card-horizontal {
+        flex-direction: column;
+        text-align: center;
+
+        .custom-card-img-horizontal {
+            max-width: 100%;
+            margin: 0 0 10px 0;
+        }
+    }
+}
+
