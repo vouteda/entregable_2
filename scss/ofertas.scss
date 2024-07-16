@@ -1,0 +1,17 @@
+.custom-card-horizontal {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.custom-card-img-horizontal {
+    max-width: 150px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.custom-card-body-horizontal {
+    flex: 1;
+}
