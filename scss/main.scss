@@ -3,18 +3,9 @@
 @import 'carousel';
 @import 'navbar';
 @import 'cards';
-@import 'ofertas';
 
-@keyframes slideInFromLeft {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
+
+
 
 .header-content {
     animation: slideInFromLeft 1s ease-in-out forwards;
