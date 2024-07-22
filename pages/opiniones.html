@@ -10,8 +10,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <!--link a estilo propio-->
     <link rel="stylesheet" href="../css/style.css">
+    <!--link a animaciones AOS-->
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 </head>
-<body>
+<body class="bg-body-custom">
     <header class="d-none d-lg-flex justify-content-center align-items-center p-3 bg-light-custom">
         <img src="/entregable_2/img/icono.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
         <h1 class="m-0">MR. FUNDA STORE</h1>
@@ -90,3 +94,40 @@
         </div>
     </div>
     </section>
+    <footer class="bg-dark text-light mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>NOSOTROS</h5>
+                    <p>Somos una tienda especializada en productos para dispositivos móviles.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>CONTACTANOS</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-telephone-fill"></i> Teléfono: +123 456 789</li>
+                        <li><i class="bi bi-whatsapp"></i> WhatsApp: +123 456 789</li>
+                        <li><i class="bi bi-envelope-fill"></i> Email: info@senorbreak.com</li>
+                        <li><i class="bi bi-geo-fill"></i> Dirección: Av. Principal 123, Ciudad, País</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>REDES SOCIALES</h5>
+                    <ul class="list-unstyled d-flex justify-content-around">
+                        <li><a href="#" class="btn btn-outline-light"><i class="bi bi-facebook"></i></a></li>
+                        <li><a href="#" class="btn btn-outline-light"><i class="bi bi-twitter"></i></a></li>
+                        <li><a href="#" class="btn btn-outline-light"><i class="bi bi-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script>
+        AOS.init();
+      </script>

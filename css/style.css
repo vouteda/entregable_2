@@ -40,6 +40,7 @@
 .nav-item {
   margin-left: 20px;
   margin-right: 20px;
+  position: relative; /* Ensure position is relative for dropdown positioning */
 }
 
 .nav-link {
@@ -61,13 +62,32 @@
   animation: dropdownFadeIn 0.3s ease-in-out forwards;
 }
 
-.row {
+.dropdown-item {
+  color: #333;
+  padding: 10px 20px;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.cards-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 30px;
   margin-top: 30px;
-  padding: 0 20px;
+  padding: 0 30px;
 }
 
 .custom-card {
@@ -79,7 +99,7 @@
   transition: transform 0.3s, box-shadow 0.3s, height 0.3s;
   position: relative;
   padding: 10px;
-  margin: 0 10px;
+  margin: 0 5px;
   max-width: 220px;
 }
 .custom-card:hover {
@@ -125,6 +145,14 @@
   .custom-card .custom-card-body .custom-btn-view {
     display: block;
   }
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding: 0 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
