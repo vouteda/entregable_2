@@ -14,19 +14,4 @@
     padding: 0 30px; 
 }
 
-.fade-in {
-    opacity: 0;
-    transition: opacity 1s ease-in;
-  }
-  
-  
-  .fade-in.is-visible {
-    opacity: 1;
-  }
 
-
-  @keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
