@@ -4,10 +4,7 @@
     justify-content: center;
     margin-bottom: 30px;
     margin-top: 30px;
-}
-
-.col-center {
-    text-align: center;
+    padding: 0 20px; // Add padding to the container
 }
 
 .custom-card {
@@ -19,7 +16,7 @@
     transition: transform 0.3s, box-shadow 0.3s, height 0.3s;
     position: relative;
     padding: 10px;
-    margin: 0 1px;
+    margin: 0 10px; // Reduce horizontal margin between cards
     max-width: 220px;
 
     &:hover {
