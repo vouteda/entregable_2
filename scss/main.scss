@@ -23,3 +23,10 @@
   .fade-in.is-visible {
     opacity: 1;
   }
+
+
+  @keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
