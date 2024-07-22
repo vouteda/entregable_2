@@ -115,10 +115,10 @@
   padding: 15px;
 }
 .custom-card .custom-card-body .custom-card-precio {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .custom-card .custom-card-body .custom-btn-view {
-  display: none;
+  display: block;
   position: absolute;
   bottom: 10px;
   left: 50%;
@@ -130,9 +130,6 @@
   border-radius: 4px;
   transition: opacity 0.3s;
   font-size: 0.9rem;
-}
-.custom-card .custom-card-body .custom-btn-view:hover {
-  display: block;
 }
 
 @media (max-width: 768px) {
