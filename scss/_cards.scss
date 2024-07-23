@@ -107,6 +107,7 @@
 .custom-card-img {
     width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 .letra-chica {
@@ -117,6 +118,54 @@
     font-size: 12px; /* Ajusta el tamaño del texto según sea necesario */
     color: #6c757d; /* Ajusta el color según el diseño */
 }
+
+.opinion-box {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con 90% de opacidad */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .opinion-box::before {
+    content: "👤"; /* Unicode for person icon */
+    font-size: 24px; /* Icon size */
+    position: absolute; /* Position the icon */
+    top: 10px; /* Adjust top position */
+    left: 10px; /* Adjust left position */
+  }
+  
+  .section-overlay {
+    position: relative;
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco con 80% de opacidad */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section-overlay h2 {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+  }
+  
+  .opinion-box {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con 90% de opacidad */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .opinion-box-left {
+    margin-right: auto;
+  }
+  
+  .opinion-box-right {
+    margin-left: auto;
+  }
 
 
 
