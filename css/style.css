@@ -155,7 +155,6 @@
   position: relative;
   transform-style: preserve-3d;
   transition: transform 1.2s;
-  overflow: hidden; /* Asegúrate de que el contenido no desborde */
   border-radius: 25px; /* Añade bordes redondeados a la tarjeta */
 }
 
@@ -173,11 +172,17 @@
 
 .card-front {
   background-color: #f8f9fa; /* Color de fondo opcional */
+  display: flex; /* Para centrar la imagen */
+  align-items: center; /* Para centrar la imagen */
+  justify-content: center; /* Para centrar la imagen */
 }
 
 .card-back {
   background-color: #ffffff; /* Color de fondo opcional */
   transform: rotateY(180deg);
+  display: flex; /* Para centrar el contenido */
+  align-items: center; /* Para centrar el contenido */
+  justify-content: center; /* Para centrar el contenido */
 }
 
 .card-body {
@@ -196,7 +201,6 @@
 
 .letra-chica {
   position: absolute;
-  bottom: 10px; /* Ajusta según el espaciado deseado */
   left: 50%;
   transform: translateX(-50%); /* Centra horizontalmente el texto pequeño */
   font-size: 12px; /* Ajusta el tamaño del texto según sea necesario */
