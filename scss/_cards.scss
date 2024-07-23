@@ -14,12 +14,17 @@
     border-radius: 25px;
 }
 
-.custom-card {
-    border: 1px solid #ddd;
+
+
+.custom-card {    
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Sombra ligera para añadir profundidad
+    color: #FFFFFF;
+    background-color: #4B4B4B;
     border-radius: 4px;
     overflow: hidden;
     margin-bottom: 20px;
-    background-color: #f8f9fa;
+    color: #FFFFFF;
     transition: transform 0.3s, box-shadow 0.3s, height 0.3s;
     position: relative;
     padding: 10px;
@@ -183,6 +188,31 @@
   .opinion-box-right {
     margin-left: auto;
   }
+
+.filtros-card {
+background-color: #4B4B4B; // Gris medio para las tarjetas
+color: #FFFFFF; // Texto en blanco para las tarjetas
+border: 2px solid #FFFFFF; // Borde blanco para destacar la tarjeta
+border-radius: 10px; // Borde redondeado para un estilo moderno
+padding: 20px; // Espaciado interno para una mejor apariencia
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Sombra ligera para añadir profundidad
+}
+
+.form-check-label, .form-label {
+color: #FFFFFF; // Mantener las etiquetas en blanco
+}
+
+.btn-custom {
+background-color: #00FF00; // Verde tenis para el botón
+color: #2C2C2C; // Color del texto del botón
+border: none; // Sin borde
+border-radius: 5px; // Bordes redondeados
+padding: 10px 20px; // Espaciado interno del botón
+}
+
+.btn-custom:hover {
+background-color: #00CC00; // Cambiar a un tono más oscuro de verde al pasar el mouse
+}
 
 
 

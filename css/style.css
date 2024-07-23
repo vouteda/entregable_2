@@ -99,11 +99,14 @@
 }
 
 .custom-card {
-  border: 1px solid #ddd;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #FFFFFF;
+  background-color: #4B4B4B;
   border-radius: 4px;
   overflow: hidden;
   margin-bottom: 20px;
-  background-color: #f8f9fa;
+  color: #FFFFFF;
   transition: transform 0.3s, box-shadow 0.3s, height 0.3s;
   position: relative;
   padding: 10px;
@@ -262,6 +265,31 @@
   margin-left: auto;
 }
 
+.filtros-card {
+  background-color: #4B4B4B;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-check-label, .form-label {
+  color: #FFFFFF;
+}
+
+.btn-custom {
+  background-color: #00FF00;
+  color: #2C2C2C;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.btn-custom:hover {
+  background-color: #00CC00;
+}
+
 @media (min-width: 768px) {
   .card:hover {
     transform: rotateY(180deg);
@@ -323,7 +351,7 @@
 }
 
 .bg-body-custom {
-  background-color: rgb(24, 26, 27);
+  background-color: #2C2C2C;
 }
 
 /*# sourceMappingURL=style.css.map */
