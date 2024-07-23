@@ -89,6 +89,9 @@
   margin-bottom: 30px;
   margin-top: 30px;
   padding: 0 30px;
+}
+
+.box-sizing-none {
   box-sizing: content-box;
 }
 
@@ -181,14 +184,13 @@
 }
 
 .card-front {
-  background-color: #f8f9fa; /* Color de fondo opcional */
   display: flex; /* Para centrar la imagen */
   align-items: center; /* Para centrar la imagen */
   justify-content: center; /* Para centrar la imagen */
 }
 
 .card-back {
-  background-color: #ffffff; /* Color de fondo opcional */
+  background-color: #4B4B4B; /* Color de fondo opcional */
   transform: rotateY(180deg);
   display: flex; /* Para centrar el contenido */
   align-items: center; /* Para centrar el contenido */
@@ -334,7 +336,7 @@
     top: 100%; /* Mueve el panel fuera del área visible */
     width: 100%;
     height: 100%;
-    background-color: #ffffff; /* Color de fondo opcional */
+    background-color: #4B4B4B; /* Color de fondo opcional */
     transition: top 0.6s ease;
   }
   .expand-card-checkbox:checked + .card .card-back {
@@ -352,6 +354,11 @@
 
 .bg-body-custom {
   background-color: #2C2C2C;
+}
+
+.titulo {
+  color: #ffffff;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
