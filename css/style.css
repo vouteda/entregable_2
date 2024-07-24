@@ -41,7 +41,7 @@
 .nav-item {
   margin-left: 20px;
   margin-right: 20px;
-  position: relative; /* Ensure position is relative for dropdown positioning */
+  position: relative;
 }
 
 .nav-link {
@@ -153,8 +153,8 @@
 
 .card-title-container {
   display: flex;
-  justify-content: center; /* Centra horizontalmente el título dentro del contenedor */
-  align-items: center; /* Alinea el título verticalmente dentro del contenedor */
+  justify-content: center;
+  align-items: center;
   height: 100%;
 }
 
@@ -164,11 +164,11 @@
 
 .card {
   width: 100%;
-  height: 150px; /* Ajusta esta altura según tus necesidades */
+  height: 150px;
   position: relative;
   transform-style: preserve-3d;
   transition: transform 1.2s;
-  border-radius: 25px; /* Añade bordes redondeados a la tarjeta */
+  border-radius: 25px;
 }
 
 .card-flipped {
@@ -180,47 +180,47 @@
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border-radius: 25px; /* Asegúrate de que los bordes de las caras también estén redondeados */
+  border-radius: 25px;
 }
 
 .card-front {
-  display: flex; /* Para centrar la imagen */
-  align-items: center; /* Para centrar la imagen */
-  justify-content: center; /* Para centrar la imagen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-back {
-  background-color: #4B4B4B; /* Color de fondo opcional */
+  background-color: #4B4B4B;
   transform: rotateY(180deg);
-  display: flex; /* Para centrar el contenido */
-  align-items: center; /* Para centrar el contenido */
-  justify-content: center; /* Para centrar el contenido */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-body {
   padding: 20px;
   text-align: center;
-  border-radius: 25px; /* Añade bordes redondeados al cuerpo de la tarjeta */
+  border-radius: 25px;
 }
 
 .custom-card-img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ajusta la imagen para que cubra el contenedor */
-  object-position: center; /* Centra la imagen dentro del contenedor */
-  border-radius: 25px; /* Añade bordes redondeados a la imagen */
+  object-fit: cover;
+  object-position: center;
+  border-radius: 25px;
 }
 
 .letra-chica {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%); /* Centra horizontalmente el texto pequeño */
-  font-size: 12px; /* Ajusta el tamaño del texto según sea necesario */
-  color: #6c757d; /* Ajusta el color según el diseño */
+  transform: translateX(-50%);
+  font-size: 12px;
+  color: #6c757d;
 }
 
 .opinion-box {
-  background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con 90% de opacidad */
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -229,16 +229,16 @@
 }
 
 .opinion-box::before {
-  content: "👤"; /* Unicode for person icon */
-  font-size: 24px; /* Icon size */
-  position: absolute; /* Position the icon */
-  top: 10px; /* Adjust top position */
-  left: 10px; /* Adjust left position */
+  content: "👤";
+  font-size: 24px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
 .section-overlay {
   position: relative;
-  background: rgba(255, 255, 255, 0.8); /* Fondo blanco con 80% de opacidad */
+  background: rgba(255, 255, 255, 0.8);
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -251,7 +251,7 @@
 }
 
 .opinion-box {
-  background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con 90% de opacidad */
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -307,7 +307,6 @@
   .custom-card .custom-card-body .custom-btn-view {
     display: block;
   }
-  /* Oculta el checkbox en el diseño de desktop */
   .expand-card-checkbox {
     display: none;
   }
@@ -318,29 +317,29 @@
   }
   .card {
     width: 100%;
-    max-width: 300px; /* Ajusta el tamaño según tus necesidades */
+    max-width: 300px;
     position: relative;
     cursor: pointer;
   }
   .card-content {
     overflow: hidden;
-    height: 150px; /* Altura inicial de la tarjeta */
+    height: 150px;
     transition: height 0.6s ease;
     position: relative;
   }
   .expand-card-checkbox:checked + .card .card-content {
-    height: 300px; /* Altura cuando está expandida */
+    height: 300px;
   }
   .card-back {
     position: absolute;
-    top: 100%; /* Mueve el panel fuera del área visible */
+    top: 100%;
     width: 100%;
     height: 100%;
-    background-color: #4B4B4B; /* Color de fondo opcional */
+    background-color: #4B4B4B;
     transition: top 0.6s ease;
   }
   .expand-card-checkbox:checked + .card .card-back {
-    top: 0; /* Mueve el panel posterior a la vista */
+    top: 0;
   }
 }
 .row {
