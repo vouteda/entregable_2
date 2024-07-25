@@ -3,7 +3,7 @@
 @import 'carousel';
 @import 'navbar';
 @import 'cards';
-
+@import 'font';
 
 .row {
     display: flex;
@@ -21,8 +21,9 @@
 .titulo {
     color:#ffffff;
     font-weight: bold;
-
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 
 
 
