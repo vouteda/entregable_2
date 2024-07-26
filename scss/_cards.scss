@@ -77,65 +77,64 @@
     transform-style: preserve-3d;
     transition: transform 1.2s;
     border-radius: 25px;
-    
-    .card-front, .card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-        border-radius: 25px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .card-back {
-        background-color: #4B4B4B;
-        transform: rotateY(180deg);
-    }
-    
-    .card-flipped {
-        transform: rotateY(180deg);
-    }
-}
-
-.card-body {
+  }
+  
+  .promo-card .card-front, .promo-card .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .promo-card .card-back {
+    background-color: #4B4B4B;
+    transform: rotateY(180deg);
+  }
+  
+  .card-flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .card-body {
     padding: 20px;
     text-align: center;
     border-radius: 25px;
-}
-
-
-.custom-card-img {
+  }
+  
+  .custom-card-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
-}
-
-.letra-chica {
+  }
+  
+  .letra-chica {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     font-size: 12px;
     color: #6c757d;
-}
-
-.card-container {
+  }
+  
+  .card-container {
     perspective: 1000px;
-}
-
-.card-title-container {
+  }
+  
+  .card-title-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-}
-
-.pagos-row .col-md-4 {
+  }
+  
+  .pagos-row .col-md-4 {
     margin-bottom: 20px;
-}
-
+  }
+  
 /* Opioniones */
 
 .opinion-box {
