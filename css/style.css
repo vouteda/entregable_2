@@ -171,31 +171,22 @@
   transition: transform 1.2s;
   border-radius: 25px;
 }
-
-.card-flipped {
-  transform: rotateY(180deg);
-}
-
-.card-front, .card-back {
+.promo-card .card-front, .promo-card .card-back {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
   border-radius: 25px;
-}
-
-.card-front {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.card-back {
+.promo-card .card-back {
   background-color: #4B4B4B;
   transform: rotateY(180deg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+.promo-card .card-flipped {
+  transform: rotateY(180deg);
 }
 
 .card-body {
@@ -227,13 +218,20 @@
   position: relative;
   z-index: 1;
 }
-
 .opinion-box::before {
   content: "👤";
   font-size: 24px;
   position: absolute;
   top: 10px;
   left: 10px;
+}
+
+.opinion-box-left {
+  margin-right: auto;
+}
+
+.opinion-box-right {
+  margin-left: auto;
 }
 
 .section-overlay {
@@ -248,23 +246,6 @@
   position: relative;
   z-index: 1;
   margin-bottom: 30px;
-}
-
-.opinion-box {
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  position: relative;
-  z-index: 1;
-}
-
-.opinion-box-left {
-  margin-right: auto;
-}
-
-.opinion-box-right {
-  margin-left: auto;
 }
 
 .filtros-card {
@@ -371,9 +352,6 @@ p {
 a {
   color: black;
   text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
 }
 
 .row {
