@@ -72,68 +72,76 @@
 
 .promo-card {
     width: 100%;
-    height: 150px;
+    height: 150px; /* Ajusta esta altura según tus necesidades */
     position: relative;
     transform-style: preserve-3d;
     transition: transform 1.2s;
-    border-radius: 25px;
-  }
-  
-  .promo-card .card-front, .promo-card .card-back {
+    border-radius: 25px; /* Añade bordes redondeados a la tarjeta */
+}
+
+.promo-card-flipped {
+    transform: rotateY(180deg);
+}
+
+.promo-card-front, .promo-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .promo-card .card-back {
-    background-color: #4B4B4B;
+    border-radius: 25px; /* Asegúrate de que los bordes de las caras también estén redondeados */
+}
+
+.promo-card-front {
+    background-color: #f8f9fa; /* Color de fondo opcional */
+    display: flex; /* Para centrar la imagen */
+    align-items: center; /* Para centrar la imagen */
+    justify-content: center; /* Para centrar la imagen */
+}
+
+.promo-card-back {
+    background-color: #ffffff; /* Color de fondo opcional */
     transform: rotateY(180deg);
-  }
-  
-  .card-flipped {
-    transform: rotateY(180deg);
-  }
-  
-  .card-body {
+    display: flex; /* Para centrar el contenido */
+    align-items: center; /* Para centrar el contenido */
+    justify-content: center; /* Para centrar el contenido */
+}
+
+.promo-card-body {
     padding: 20px;
     text-align: center;
-    border-radius: 25px;
-  }
-  
-  .custom-card-img {
+    border-radius: 25px; /* Añade bordes redondeados al cuerpo de la tarjeta */
+}
+
+.custom-promo-card-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
+    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor */
+    object-position: center; /* Centra la imagen dentro del contenedor */
+    border-radius: 25px; /* Añade bordes redondeados a la imagen */
+}
   
-  .letra-chica {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 12px;
-    color: #6c757d;
-  }
-  
-  .card-container {
-    perspective: 1000px;
-  }
-  
-  .card-title-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-  
-  .pagos-row .col-md-4 {
-    margin-bottom: 20px;
-  }
+.letra-chica {
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+font-size: 12px;
+color: #6c757d;
+}
+
+.card-container {
+perspective: 1000px;
+}
+
+.card-title-container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+}
+
+.pagos-row .col-md-4 {
+margin-bottom: 20px;
+}
   
 /* Opioniones */
 
