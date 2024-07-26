@@ -9,11 +9,7 @@
 .box-sizing-none {
     box-sizing: content-box; 
 }
-.filtros-card-body {
-    padding: 20px;
-    text-align: center;
-    border-radius: 25px;
-}
+
 
 /* Cards productos */
 
@@ -88,7 +84,7 @@
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    border-radius: 25px; /* Asegúrate de que los bordes de las caras también estén redondeados */
+    border-radius: 25px; 
 }
 
 .promo-card-front {
@@ -128,11 +124,11 @@ font-size: 12px;
 color: #6c757d;
 }
 
-.card-container {
+.promo-card-container {
 perspective: 1000px;
 }
 
-.card-title-container {
+.promo-card-title-container {
 display: flex;
 justify-content: center;
 align-items: center;
@@ -142,7 +138,13 @@ height: 100%;
 .pagos-row .col-md-4 {
 margin-bottom: 20px;
 }
-  
+
+@media (min-width: 768px) {
+    .promo-card:hover:hover {
+        transform: rotateY(180deg);
+    }
+}
+
 /* Opioniones */
 
 .opinion-box {
@@ -187,7 +189,6 @@ margin-bottom: 20px;
 
 /* Filtros */
 
-
 .filtros-card {
     background-color: #4B4B4B;
     color: #FFFFFF;
@@ -213,12 +214,12 @@ margin-bottom: 20px;
     background-color: #719171;
 }
 
-
-@media (min-width: 768px) {
-    .card:hover {
-        transform: rotateY(180deg);
-    }
+.filtros-card-body {
+    padding: 20px;
+    text-align: center;
+    border-radius: 25px;
 }
+
 
 @media (max-width: 768px) {
     .custom-card {
