@@ -163,7 +163,7 @@
   margin-bottom: 20px;
 }
 
-.card {
+.promo-card {
   width: 100%;
   height: 150px;
   position: relative;
@@ -209,7 +209,6 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
-  border-radius: 25px;
 }
 
 .letra-chica {
