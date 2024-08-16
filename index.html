@@ -27,16 +27,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script>
     document.addEventListener('DOMContentLoaded', function() {
-        if (window.location.hostname === 'vouteda.github.io') {
-            document.querySelectorAll('link, img, script').forEach(function(el) {
-                ['src', 'href'].forEach(function(attr) {
-                    if (el[attr] && el[attr].startsWith('/')) {
-                        el[attr] = el[attr].substring(1);
-                    }
-                });
-            });
-        }
-    });
+    // Check if the hostname matches 'vouteda.github.io'
+    if (window.location.hostname === 'vouteda.github.io') {
+        // Select all link, img, and script elements
+        document.querySelectorAll('link[href^="/"], img[src^="/"], script[src^="/"]').forEach(function(el) {
+            // Update the href or src attributes by removing the leading '/'
+            if (el.href) {
+                el.href = el.href.substring(1);
+            }
+            if (el.src) {
+                el.src = el.src.substring(1);
+            }
+        });
+    }
+});
     </script>
 </head>
 
