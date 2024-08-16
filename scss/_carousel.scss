@@ -6,13 +6,14 @@
             object-fit: cover;
         }
     }
+    .carousel-control-prev, .carousel-control-next {
+        top: 50%;
+        transform: translateY(-50%);
+        bottom: auto;
+    }
 }
 
-.carousel-control-prev, .carousel-control-next {
-    top: 50%;
-    transform: translateY(-50%);
-    bottom: auto;
-}
+
 
 #productCarousel {
     .carousel-item {

@@ -30,12 +30,15 @@
 
     &:hover {
         transform: scale(1.1);
+
+        .custom-card-producto {
+            color: black; 
+        }
     }
 
     .custom-card-img {
         width: 100%;
         height: 250px;
-        margin-bottom: 15px;
         object-fit: cover;
     }
 
@@ -43,7 +46,10 @@
         padding: 15px;
 
         .custom-card-precio {
-            margin-bottom: 25px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            background-color: #000000;
+            padding: 10px 15px;
         }
 
         .custom-btn-view {
@@ -68,11 +74,11 @@
 
 .promo-card {
     width: 100%;
-    height: 150px; /* Ajusta esta altura según tus necesidades */
+    height: 150px; 
     position: relative;
     transform-style: preserve-3d;
     transition: transform 1.2s;
-    border-radius: 25px; /* Añade bordes redondeados a la tarjeta */
+    border-radius: 25px; 
 }
 
 .promo-card-flipped {
@@ -88,18 +94,57 @@
 }
 
 .promo-card-front {
-    background-color: #f8f9fa; /* Color de fondo opcional */
-    display: flex; /* Para centrar la imagen */
-    align-items: center; /* Para centrar la imagen */
-    justify-content: center; /* Para centrar la imagen */
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .promo-card-back {
-    background-color: #ffffff; /* Color de fondo opcional */
+    background-color: #ffffff;
     transform: rotateY(180deg);
-    display: flex; /* Para centrar el contenido */
-    align-items: center; /* Para centrar el contenido */
-    justify-content: center; /* Para centrar el contenido */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.promo-card-subtitle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .promo-card {
+        height: 150px;
+        width: 100%;
+
+        .promo-card-body {
+            padding: 20px;
+            text-align: center;
+            border-radius: 25px; 
+        }
+
+        .promo-card-front {
+            img.custom-promo-card-img {
+                width: 100%;
+                border-bottom-left-radius: 25px;
+                border-bottom-right-radius: 25px;
+            }
+
+            .promo-card-subtitle {
+                display: block;
+                background-color: $bg-light-custom;
+                color: #000;
+                padding: 8px;
+                font-size: 14px;
+                text-align: center;
+                border-bottom-left-radius: 25px;
+                border-bottom-right-radius: 25px;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+            }
+        }
+    }
 }
 
 .promo-card-body {
@@ -221,9 +266,10 @@ margin-bottom: 20px;
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 750px) {
     .custom-card {
-        margin: 0 10px;
+        margin-top: 25px;
+        margin-bottom: 25px;
 
         &:hover {
             transform: none;
