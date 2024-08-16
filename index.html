@@ -25,6 +25,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <!-- Enlace el font de Google -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        if (window.location.hostname === 'vouteda.github.io') {
+            document.querySelectorAll('link, img, script').forEach(function(el) {
+                ['src', 'href'].forEach(function(attr) {
+                    if (el[attr] && el[attr].startsWith('/')) {
+                        el[attr] = el[attr].substring(1);
+                    }
+                });
+            });
+        }
+    });
+    </script>
 </head>
 
 <body class="bg-body-custom">
@@ -338,19 +351,6 @@
     document.addEventListener("DOMContentLoaded", function() {
         AOS.init();
     });
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            if (window.location.hostname === 'vouteda.github.io') {
-                document.querySelectorAll('link, img, script').forEach(function(el) {
-                    ['src', 'href'].forEach(function(attr) {
-                        if (el[attr] && el[attr].startsWith('/')) {
-                            el[attr] = el[attr].substring(1);
-                        }
-                    });
-                });
-            }
-        });
     </script>
 </body>
 </html>
